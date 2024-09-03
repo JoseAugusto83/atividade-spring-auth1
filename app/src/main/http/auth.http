@@ -1,0 +1,16 @@
+
+@baseUrl = https://8080-joseaugusto-atividadesp-5c46s6jpnm7.ws-us115.gitpod.io
+
+###
+
+
+POST {{baseUrl}}/auth
+Content-Type: application/json
+
+
+{
+    "nomeDeUsuario": "user",
+    "senha": "user"
+}
+
+

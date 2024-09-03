@@ -1,0 +1,41 @@
+
+@baseUrl = https://8080-joseaugusto-atividadesp-5c46s6jpnm7.ws-us115.gitpod.io
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgSm9nb3MiLCJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI1NDA5NTc5fQ.hp8ewJUMaJugjDVfc6FgPPz8fAvWC_ly_5K-smyeCwA
+###
+
+
+GET {{baseUrl}}/jogos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+
+POST {{baseUrl}}/jogos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "nomeJogo": "Cs Go 2",
+    "genero": "Barbie"
+}
+
+###
+
+GET {{baseUrl}}/jogos/3
+
+
+###
+
+PUT {{baseUrl}}/jogos/2
+Content-Type: application/json
+Authorization: Bearer ACCESS-TOKEN
+
+{
+    "nomeJogo": "Mortal Kombat",
+    "genero": "Luta"
+}
+
+
+###
+DELETE {{baseUrl}}/jogos/1
